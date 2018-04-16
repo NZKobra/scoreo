@@ -1,9 +1,6 @@
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
 var httpRequest = require("./http-request");
-__export(require("./http-request"));
+global.moduleMerge(httpRequest, exports);
 function getString(arg) {
     return new Promise(function (resolve, reject) {
         httpRequest.request(typeof arg === "string" ? { url: arg, method: "GET" } : arg)

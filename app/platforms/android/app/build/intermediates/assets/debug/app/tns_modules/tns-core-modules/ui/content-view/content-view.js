@@ -23,9 +23,6 @@ var ContentView = (function (_super) {
                 this._addView(this._content);
             }
             this._onContentChanged(oldView, value);
-            if (view_1.isIOS && oldView !== value) {
-                this.requestLayout();
-            }
         },
         enumerable: true,
         configurable: true
@@ -52,7 +49,10 @@ var ContentView = (function (_super) {
     });
     Object.defineProperty(ContentView.prototype, "_childrenCount", {
         get: function () {
-            return this._content ? 1 : 0;
+            if (this._content) {
+                return 1;
+            }
+            return 0;
         },
         enumerable: true,
         configurable: true

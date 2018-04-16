@@ -117,6 +117,7 @@ function install() {
             var dialogs = require("ui/dialogs");
             var xhr = require("xhr");
             var fetch = require("fetch");
+            var consoleModule = require("console");
             snapshotGlobals = snapshotGlobals || {
                 setTimeout: timer.setTimeout,
                 clearTimeout: timer.clearTimeout,
@@ -133,10 +134,9 @@ function install() {
                 Headers: fetch.Headers,
                 Request: fetch.Request,
                 Response: fetch.Response,
+                console: new consoleModule.Console()
             };
         }
-        var consoleModule = require("console").Console;
-        global.console = global.console || new consoleModule();
         Object.assign(global, snapshotGlobals);
     }
     else {
@@ -155,6 +155,10 @@ function install() {
         registerOnGlobalContext("Headers", "fetch");
         registerOnGlobalContext("Request", "fetch");
         registerOnGlobalContext("Response", "fetch");
+        if (global.android) {
+            var consoleModule_1 = require("console");
+            global.console = new consoleModule_1.Console();
+        }
     }
 }
 exports.install = install;

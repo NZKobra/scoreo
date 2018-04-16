@@ -9,7 +9,7 @@ MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Daniel\.gradle\ca
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\8ed0fcee1241db8582c26d862f49243f\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\597e4db1684d7f0d4d4a388657ed0769\AndroidManifest.xml:17:1-31:12
 MERGED from [:nativescript-optimized:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\debe7d44d947b054b378bec55b3f9142\AndroidManifest.xml:2:1-11:12
-MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\da3abf176be33e290cb56073235bd342\AndroidManifest.xml:2:1-14:12
+MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\659bcda9d70375610771a7cb864ff09f\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a1233623809bffe8d66a05b911051f26\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b1f70f8e845cc3ea6dbdfd665b3ea565\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\31573cd55268ee71fb072de8a7d7215a\AndroidManifest.xml:17:1-31:12
@@ -59,8 +59,8 @@ MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daniel\.gradle\cach
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\597e4db1684d7f0d4d4a388657ed0769\AndroidManifest.xml:21:5-23:54
 MERGED from [:nativescript-optimized:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\debe7d44d947b054b378bec55b3f9142\AndroidManifest.xml:7:5-9:41
 MERGED from [:nativescript-optimized:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\debe7d44d947b054b378bec55b3f9142\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\da3abf176be33e290cb56073235bd342\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\da3abf176be33e290cb56073235bd342\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\659bcda9d70375610771a7cb864ff09f\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\659bcda9d70375610771a7cb864ff09f\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a1233623809bffe8d66a05b911051f26\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a1233623809bffe8d66a05b911051f26\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b1f70f8e845cc3ea6dbdfd665b3ea565\AndroidManifest.xml:21:5-23:63
@@ -111,8 +111,8 @@ MERGED from [com.android.support:transition:25.3.1] C:\Users\Daniel\.gradle\cach
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\8ed0fcee1241db8582c26d862f49243f\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\597e4db1684d7f0d4d4a388657ed0769\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\597e4db1684d7f0d4d4a388657ed0769\AndroidManifest.xml:29:5-20
-MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\da3abf176be33e290cb56073235bd342\AndroidManifest.xml:11:5-12:19
-MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\da3abf176be33e290cb56073235bd342\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\659bcda9d70375610771a7cb864ff09f\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\659bcda9d70375610771a7cb864ff09f\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a1233623809bffe8d66a05b911051f26\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a1233623809bffe8d66a05b911051f26\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b1f70f8e845cc3ea6dbdfd665b3ea565\AndroidManifest.xml:29:5-20

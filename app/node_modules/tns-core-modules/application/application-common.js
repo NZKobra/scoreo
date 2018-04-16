@@ -69,13 +69,7 @@ function getCssFileName() {
 }
 exports.getCssFileName = getCssFileName;
 function loadAppCss() {
-    try {
-        events.notify({ eventName: "loadAppCss", object: app, cssFile: getCssFileName() });
-    }
-    catch (e) {
-        throw new Error("The file " + getCssFileName() + " couldn't be loaded! " +
-            "You may need to register it inside ./app/vendor.ts.");
-    }
+    events.notify({ eventName: "loadAppCss", object: app, cssFile: getCssFileName() });
 }
 exports.loadAppCss = loadAppCss;
 function addCss(cssText) {

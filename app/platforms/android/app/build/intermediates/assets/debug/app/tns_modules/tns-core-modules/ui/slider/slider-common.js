@@ -9,9 +9,6 @@ var SliderBase = (function (_super) {
     function SliderBase() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    SliderBase = __decorate([
-        view_1.CSSType("Slider")
-    ], SliderBase);
     return SliderBase;
 }(view_1.View));
 exports.SliderBase = SliderBase;

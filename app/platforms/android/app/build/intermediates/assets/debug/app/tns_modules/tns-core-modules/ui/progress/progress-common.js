@@ -9,9 +9,6 @@ var ProgressBase = (function (_super) {
     function ProgressBase() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    ProgressBase = __decorate([
-        view_1.CSSType("Progress")
-    ], ProgressBase);
     return ProgressBase;
 }(view_1.View));
 exports.ProgressBase = ProgressBase;

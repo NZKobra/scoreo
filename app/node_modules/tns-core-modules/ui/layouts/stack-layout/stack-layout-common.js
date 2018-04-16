@@ -9,9 +9,6 @@ var StackLayoutBase = (function (_super) {
     function StackLayoutBase() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    StackLayoutBase = __decorate([
-        layout_base_1.CSSType("StackLayout")
-    ], StackLayoutBase);
     return StackLayoutBase;
 }(layout_base_1.LayoutBase));
 exports.StackLayoutBase = StackLayoutBase;

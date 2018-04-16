@@ -33,9 +33,6 @@ var AbsoluteLayoutBase = (function (_super) {
     };
     AbsoluteLayoutBase.prototype.onTopChanged = function (view, oldValue, newValue) {
     };
-    AbsoluteLayoutBase = __decorate([
-        layout_base_1.CSSType("AbsoluteLayout")
-    ], AbsoluteLayoutBase);
     return AbsoluteLayoutBase;
 }(layout_base_1.LayoutBase));
 exports.AbsoluteLayoutBase = AbsoluteLayoutBase;

@@ -239,5 +239,4 @@ exports.letterSpacingProperty = new view_1.CssProperty({ name: "letterSpacing", 
 exports.letterSpacingProperty.register(view_1.Style);
 exports.lineHeightProperty = new view_1.CssProperty({ name: "lineHeight", cssName: "line-height", affectsLayout: view_1.isIOS, valueConverter: function (v) { return parseFloat(v); } });
 exports.lineHeightProperty.register(view_1.Style);
-exports.resetSymbol = Symbol("textPropertyDefault");
 //# sourceMappingURL=text-base-common.js.map
