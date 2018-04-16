@@ -2,9 +2,9 @@
 <Label [text]="players.length"></Label>
 <FlexboxLayout flexDirection="column">
     <FlexboxLayout flexDirection="column" *ngFor="let player of players">
-        <Label [text]="players.length"></Label>
+        <Label [text]="player.name"></Label>
         <Button text="+" (tap)="incrementClicked(player, 1)"></Button>
-        <Label [text]="players.length"></Label>
+        <Label [text]="player.score"></Label>
         <Button text="-" (tap)="incrementClicked(player, -1)"></Button>
     </FlexboxLayout>
 </FlexboxLayout>
