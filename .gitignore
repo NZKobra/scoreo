@@ -1,4 +1,4 @@
-app/**/*.js
-app/**/*.d.ts
-app/node_modules
-app/platforms
+**/*.js
+**/*.d.ts
+node_modules
+platforms

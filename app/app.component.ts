@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, AnimationPlayer } from "@angular/core";
 import { FlexboxLayout } from "tns-core-modules/ui/layouts/flexbox-layout";
-import * as dialogs from "ui/dialogs";
+import {  } from "ui/dialogs";
+import { ListPicker } from "ui/list-picker";
 
 @Component({
   selector: "my-app",
@@ -8,6 +9,26 @@ import * as dialogs from "ui/dialogs";
 })
 export class AppComponent implements OnInit {
   public players: Player[];
+  public playerGridSizeClass: "";
+  public playerGridOptions: Array<PlayerGridOption> = [
+    {
+      name: "2 Player",
+      gridClass: "player-1x2"
+    },
+    {
+      name: "3 Player",
+      gridClass: "player-1x3"
+    },
+    {
+      name: "4 Player",
+      gridClass: "player-2x2"
+    }
+  ];
+  public selectedPlayerGridOptionIndex: number;
+
+  constructor () {
+    
+  }
 
   public ngOnInit() {
     this.players = new Array<Player>();
@@ -25,4 +46,9 @@ export class AppComponent implements OnInit {
 export class Player {
   public name: string;
   public score: number;
+}
+
+export class PlayerGridOption {
+  public name: string;
+  public gridClass: string;
 }

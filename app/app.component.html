@@ -1,0 +1,9 @@
+<ListPicker [items]="playerGridOptions" [index]="selectedPlayerGridOptionIndex" ></ListPicker>
+<FlexboxLayout flexDirection="column">
+    <FlexboxLayout flexDirection="column" class="player" *ngFor="let player of players">
+        <Label [text]="player.name"></Label>
+        <Button class="btn btn-primary btn-active" text="+" (tap)="incrementClicked(player, 1)"></Button>
+        <Label [text]="player.score"></Label>
+        <Button class="btn btn-primary btn-active" text="-" (tap)="incrementClicked(player, -1)"></Button>
+    </FlexboxLayout>
+</FlexboxLayout>

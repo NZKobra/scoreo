@@ -1,37 +1,5 @@
 {
-	"description": "Scoroe",
-	"license": "todo",
-	"readme": "todo",
-	"repository": "todo",
-	"nativescript": {
-		"id": "nz.kobra.scoreo",
-		"tns-android": {
-			"version": "4.0.0"
-		}
-	},
-	"dependencies": {
-		"@angular/animations": "^5.2.10",
-		"@angular/common": "^5.2.10",
-		"@angular/compiler": "^5.2.10",
-		"@angular/core": "^5.2.10",
-		"@angular/forms": "^5.2.10",
-		"@angular/http": "^5.2.10",
-		"@angular/platform-browser": "^5.2.10",
-		"@angular/platform-browser-dynamic": "^5.2.10",
-		"@angular/router": "^5.2.10",
-		"nativescript-angular": "^5.2.0",
-		"nativescript-theme-core": "^1.0.4",
-		"reflect-metadata": "^0.1.12",
-		"rxjs": "^5.5.10",
-		"tns-core-modules": "^3.4.1",
-		"zone.js": "^0.8.26"
-	},
-	"devDependencies": {
-		"babel-traverse": "6.4.5",
-		"babel-types": "6.4.5",
-		"babylon": "6.4.5",
-		"lazy": "1.0.11",
-		"nativescript-dev-typescript": "~0.6.0",
-		"typescript": "~2.6.2"
-	}
+  "main": "main.js",
+  "name": "nz.kobra.scoreo",
+  "version": "0.1.0"
 }
