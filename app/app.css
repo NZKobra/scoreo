@@ -1,2 +1,5 @@
 @import "nativescript-theme-core/css/core.dark.css";
 
+Page {
+    background: #1b1b1b;
+}
