@@ -1,9 +1,14 @@
 import { Component, OnInit, OnDestroy, AnimationPlayer, ViewChild, AfterViewInit, ChangeDetectorRef } from "@angular/core";
 import { FlexboxLayout } from "tns-core-modules/ui/layouts/flexbox-layout";
 import { ListPicker } from "ui/list-picker";
+import { ListView, ItemEventData } from "ui/list-view";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Page } from "ui/page";
+const { keepAwake, allowSleepAgain } = require("nativescript-insomnia");
+const insomnia = require("nativescript-insomnia");
 
 @Component({
   moduleId: module.id,
@@ -13,9 +18,13 @@ import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
 })
 export class AppComponent implements OnInit {
   public playerGridOptions: PlayerGridOption[];
-  public selectedPlayerGridOptionIndex: number;
+  public playerGridOptionSubject: BehaviorSubject<PlayerGridOption>;
 
-  constructor (private _changeDetectionRef: ChangeDetectorRef) {
+  constructor (
+    private page: Page,
+    private _changeDetectionRef: ChangeDetectorRef) {  
+    this.page.actionBarHidden = true;
+      
     this.playerGridOptions = [
       {
         name: "2 Player",
@@ -33,25 +42,28 @@ export class AppComponent implements OnInit {
         playerCount: 4
       }
     ];
+
+    this.playerGridOptionSubject = new BehaviorSubject<PlayerGridOption>(this.playerGridOptions[0]);
   }
 
   @ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
   private drawer: RadSideDrawer;
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.drawer = this.drawerComponent.sideDrawer;
     this._changeDetectionRef.detectChanges();
   }
 
-  public ngOnInit() {
+  ngOnInit(): void {
+    insomnia.keepAwake();
   }
 
-  public openDrawer() {
-    this.drawer.showDrawer();
+  ngOnDestroy(): void {
+    insomnia.allowSleepAgain();
   }
 
-  public onCloseDrawerTap() {
-    this.drawer.closeDrawer();
+  public playerGridOptionTap($event: ItemEventData) {
+    this.playerGridOptionSubject.next(this.playerGridOptions[$event.index])
   }
 }
 

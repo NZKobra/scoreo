@@ -1,14 +1,17 @@
 <RadSideDrawer tkToggleNavButton>
-    <GridLayout tkDrawerContent>
-        <Label text="Side Menu"></Label>
-        <Label text="Close Drawer" color="lightgray" padding="10" style="horizontal-align: center" (tap)="onCloseDrawerTap()"></Label>
-        <ListPicker 
-            [items]="playerGridOptions" 
-            [selectedIndex]="selectedPlayerGridOptionIndex" 
-            claaa="picker"></ListPicker>
-    </GridLayout>
+    <StackLayout tkDrawerContent class="side-drawer">
+        <AbsoluteLayout>            
+            <Label text="Scoreo" color="lightgray" padding="20"></Label>
+        </AbsoluteLayout>
+        <ListView [items]="playerGridOptions" (itemTap)="playerGridOptionTap($event)" class="list-group">
+            <ng-template let-playerGridOption="item" let-i="index" let-odd="odd" let-even="even">
+                <GridLayout class="list-group-item">
+                    <Label [text]="playerGridOption.name"></Label>
+                </GridLayout>
+            </ng-template>
+        </ListView>
+    </StackLayout>
     <StackLayout tkMainContent>
-        <Button text="OPEN DRAWER" (tap)="openDrawer()" class="drawerContentButton"></Button>
-        <dashboard></dashboard>
+        <dashboard [playerGridOptionSubject]="playerGridOptionSubject"></dashboard>
     </StackLayout>
 </RadSideDrawer>

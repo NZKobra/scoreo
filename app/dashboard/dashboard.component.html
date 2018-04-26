@@ -1,21 +1,22 @@
 <FlexboxLayout 
-    tkMainContent
-    flexDirection="column">
-    <FlexboxLayout 
+    flexDirection="row" 
+    flexWrap="wrap">
+    <FlexboxLayout
         flexDirection="column" 
         class="player" 
         [ngClass]="playerGridOption.gridClass" 
         *ngFor="let player of players">
-        <Label [text]="player.name"></Label>
+        <!-- <Label [text]="player.name"></Label> -->
         <Button 
-            class="btn btn-active btn-active" 
+            class="btn btn-primary player-increment-btn" 
             text="+" 
-            (tap)="incrementClicked(player, 1)"></Button>
+            (tap)="incrementClicked(player, 1)"
+            ></Button>
         <Label 
             [text]="player.score" 
             class="score">test</Label>
         <Button 
-            class="btn btn-primary btn-active" 
+            class="btn btn-primary player-increment-btn" 
             text="-" 
             (tap)="incrementClicked(player, -1)"></Button>
     </FlexboxLayout>

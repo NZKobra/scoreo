@@ -2,4 +2,11 @@
 
 Page {
     background: #1b1b1b;
+    color: #dddddd;
+}
+
+.side-drawer {
+    background-color: #080808;
+    color: #dddddd;
+    horizontal-align: center;
 }

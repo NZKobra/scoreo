@@ -6,7 +6,7 @@
 	"nativescript": {
 		"id": "nz.kobra.scoreo",
 		"tns-android": {
-			"version": "4.0.0"
+			"version": "4.0.1"
 		}
 	},
 	"dependencies": {
@@ -34,6 +34,7 @@
 		"lazy": "1.0.11",
 		"nativescript-dev-sass": "^1.5.0",
 		"nativescript-dev-typescript": "~0.6.0",
+		"tns-platform-declarations": "^4.0.0",
 		"typescript": "~2.6.2"
 	}
 }

@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy, AnimationPlayer, Input } from "@angular/c
 import { FlexboxLayout } from "tns-core-modules/ui/layouts/flexbox-layout";
 import { ListPicker } from "ui/list-picker";
 import { PlayerGridOption } from "../app.component";
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Subscription } from "rxjs/Subscription";
 
 @Component({
   moduleId: module.id,
@@ -9,16 +11,34 @@ import { PlayerGridOption } from "../app.component";
   templateUrl: "dashboard.component.html",
   styleUrls: ["dashboard.component.css"]
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
   public players: Player[];
+  private playerGridOptionSubscription: Subscription;
 
   @Input()
-  public playerGridOption: PlayerGridOption;
+  public playerGridOptionSubject: BehaviorSubject<PlayerGridOption>;
+  protected playerGridOption: PlayerGridOption;
 
   constructor () {
   }
 
   public ngOnInit() {
+    this.playerGridOptionSubscription = this.playerGridOptionSubject
+      .subscribe(option => {
+        this.playerGridOption = option;
+        this.initPlayerGridOption();
+      });
+  }
+
+  public ngOnDestroy() {
+    this.playerGridOptionSubscription.unsubscribe();
+  }
+
+  public incrementClicked(player: Player, delta: number): void {
+    player.score += delta;
+  }
+
+  private initPlayerGridOption(): void {
     this.players = new Array<Player>();
 
     for (let i = 0; i < this.playerGridOption.playerCount; i++) {
@@ -28,10 +48,6 @@ export class DashboardComponent implements OnInit {
 
       this.players.push(player);
     }
-  }
-
-  public incrementClicked(player: Player, delta: number): void {
-    player.score += delta;
   }
 }
 
